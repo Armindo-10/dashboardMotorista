@@ -1,0 +1,46 @@
+.slidbar {
+	width: 220px;
+	height: 100vh;
+	background-color:rgba(0, 0, 0, 0.974);
+	color: white;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.slidbar .logo {
+	font-size: 1.7em;
+	color: white;
+	font-weight: 800;
+}
+
+.slidbar .logo:hover {
+	color: limegreen;
+}
+
+.slidbar h2 {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.slidbar li {
+	margin: 45px 0;
+
+}
+
+.slidbar ul li a {
+	color: blue;
+	text-decoration: none;
+	list-style: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	display: block;
+}
+
+.slidbar ul li a:hover {
+	text-decoration: underline;
+	opacity: 0.7;
+}

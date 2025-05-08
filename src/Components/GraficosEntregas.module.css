@@ -1,0 +1,13 @@
+.GraficosEntregas {
+	width: 100%;
+	height: 300px;
+	padding: 20px;
+	margin-top: 40px;
+	
+}
+.GraficosEntregas h2{
+	color: white;
+	margin-bottom: 9px;
+	text-transform: uppercase;
+	font-weight: 700;
+}

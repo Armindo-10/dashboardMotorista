@@ -1,0 +1,29 @@
+.Topbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f4f6fa;
+	padding: 10px 20px;
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.TopbarLeft h1 {
+	font-size: 20px;
+	color: #2f3e9e;
+}
+
+.tobarRight {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.tobarRight span{
+	font-weight: 500;
+}
+.avatar{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
