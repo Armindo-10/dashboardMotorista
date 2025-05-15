@@ -1,3 +1,11 @@
 .historico{
 	padding: 20px;
 }
+
+.historico h2{
+	color: white;
+	font: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 3%;
+	margin-top: 20px;
+}

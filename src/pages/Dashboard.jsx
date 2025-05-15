@@ -18,8 +18,6 @@ export default function Dashboard() {
 				<StateCard title="total de km rodados" value="327km" percentage="1" ispositive={true} />
 			</div>
 
-
-
 		</div>
 	)
 }

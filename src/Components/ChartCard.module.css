@@ -1,0 +1,79 @@
+.ChartCard {
+	width: 100%;
+}
+
+.ChartCard h2 {
+	color: white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.Cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5%;
+	gap: 1em;
+}
+
+.Cards .info img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.Cards .info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+	background-color:  rgb(2, 2, 123);
+	padding: 25px;
+	border-radius: 8px;
+	box-shadow: 0 2px 7px solid black;
+	width: 32%;
+	height: 100%;
+
+	&:hover{
+		border: 1px solid white;
+		transition: 0.5s ease-in-out;
+	}
+}
+
+.Cards .info p {
+	color: white;
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+.Cards .info p strong {
+	font-weight: 800;
+	color: yellow;
+}
+
+/*estilizando o botao do card info*/
+
+.Cards .info .Botao {
+	background-color: black;
+	color: rgb(0, 0, 255);
+	padding: 10px 20px;
+	border-radius: 7px;
+	margin-top: 7px;
+	text-align: center;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+
+
+
+	&:hover {
+		color: yellow;
+		transition: 0.4s ease-in-out;
+		opacity: 0.6;
+
+	}
+}

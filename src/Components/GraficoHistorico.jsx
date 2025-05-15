@@ -13,7 +13,7 @@ const data = [
 ];
 
 export default function GraficoHistorico() {
-	const title = "Historico de entregas(Últimos Meses)"
+	const title = "Histórico de entregas(Últimos Meses)"
 	return (
 		<div className={styles.GraficoHistorico}>
 			<h2>{title}</h2>

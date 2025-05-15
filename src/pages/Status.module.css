@@ -1,3 +1,8 @@
 .status{
 	padding: 20px;
 }
+.status h2{
+	font-size: 2rem;
+	color: white;
+	text-transform: uppercase;
+}

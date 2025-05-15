@@ -19,10 +19,12 @@
 	align-items: center;
 	gap: 10px;
 }
-.tobarRight span{
-	font-weight: 500;
+
+.tobarRight span {
+	font-weight: 800;
 }
-.avatar{
+
+.avatar {
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;

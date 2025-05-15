@@ -1,0 +1,15 @@
+.NotFound{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	color: white
+}
+.NotFound h2{
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+.NotFound h3{
+	font-size: 1.7em;
+	letter-spacing: 2px;
+}

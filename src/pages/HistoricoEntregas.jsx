@@ -5,7 +5,7 @@ export default function HistoricoEntregas() {
 
 	return (
 		<div className={styles.historico}>
-			<h2>Historico de entregas</h2>
+			<h2>Histórico de entregas</h2>
 			<GraficoHistorico />
 		</div>
 	)
