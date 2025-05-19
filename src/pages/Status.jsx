@@ -1,13 +1,24 @@
 import GraficoStatus from "../Components/GraficoStatus";
-import styles from "./Status.module.css"
+import styled from "styled-components";
+
+
+const StatusContainer = styled.section`
+  padding: 20px;
+`;
+
+const Titulo = styled.h2`
+	font-size: 2rem;
+	color: white;
+	text-transform: uppercase;
+`
 
 function Status() {
 
 	return (
-		<div className={styles.status}>
-			<h2>Status</h2>
+		<StatusContainer>
+			<Titulo>Status</Titulo>
 			<GraficoStatus />
-		</div>
+		</StatusContainer>
 	)
 }
 

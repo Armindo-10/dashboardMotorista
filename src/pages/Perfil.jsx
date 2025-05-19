@@ -1,13 +1,17 @@
-import styles from "./Perfil.module.css"
-import ChartCard from "../Components/ChartCard"
+import styled from "styled-components";
+import ChartCard from "../Components/ChartCard";
+
+const PerfilContainer = styled.div`
+padding: 20px;  
+`
 
 export default function Perfil() {
 
 
 	return (
 
-		<div className={styles.Perfil}>
+		<PerfilContainer>
 			<ChartCard />
-		</div>
+		</PerfilContainer>
 	)
 }
