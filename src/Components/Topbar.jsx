@@ -39,7 +39,7 @@ export default function Topbar() {
 
 		<TopbarContainer>
 
-			<div className={styles.TopbarLeft}></div>
+			<div className="TopbarLeft"></div>
 			<Titulo>Dashboard do Motorista</Titulo>
 
 			<TobarRight>
