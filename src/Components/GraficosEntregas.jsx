@@ -1,5 +1,19 @@
-import styles from "./GraficosEntregas.module.css";
+import styled from "styled-components"
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
+
+const GraficosEntregasContainer = styled.section`
+    width: 100%;
+	height: 300px;
+	padding: 20px;
+	margin-top: 40px;
+`;
+
+const Titulo = styled.h2`
+    color: white;
+	margin-bottom: 9px;
+	text-transform: uppercase;
+	font-weight: 700;
+`
 
 const data = [
 
@@ -17,8 +31,8 @@ const Title = "Entregas por mês";
 export default function GraficosEntregas() {
 
 	return (
-		<div className={styles.GraficosEntregas}>
-			<h2>{Title}</h2>
+		<GraficosEntregasContainer>
+			<Titulo>{Title}</Titulo>
 			<ResponsiveContainer width="100%" height={300} >
 				<BarChart data={data}>
 					<CartesianGrid strokeDasharray="3 3" />
@@ -28,6 +42,6 @@ export default function GraficosEntregas() {
 					<Bar dataKey="Entregas" fill="#88884d" />
 				</BarChart>
 			</ResponsiveContainer>
-		</div>
+		</GraficosEntregasContainer>
 	)
 }

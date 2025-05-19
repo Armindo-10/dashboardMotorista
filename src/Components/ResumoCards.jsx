@@ -1,5 +1,33 @@
-import styles from "./ResumoCards.module.css";
+import styled from "styled-components";
 
+
+const ResumoCardsContainer = styled.section`
+   	display: flex;
+	gap: 20px;
+	margin: 20px;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+`;
+
+const Card = styled.div`
+  	flex: 1;
+	justify-content: space-around;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	margin-top: 40px;
+	border: 1px dashed yellow;
+	color: #fff;
+`;
+
+const Titulo = styled.h3`
+   	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+`
 
 export default function ResumoCards() {
 	const Cards = [
@@ -10,15 +38,15 @@ export default function ResumoCards() {
 
 	return (
 
-		<div className={styles.ResumoCards}>
+		<ResumoCardsContainer>
 
 			{Cards.map((card, index) => (
-				<div className={styles.Card} key={index} >
-					<h3>{card.titulo}</h3>
+				<Card key={index} >
+					<Titulo>{card.titulo}</Titulo>
 					<p>{card.valor}</p>
-				</div>
+				</Card>
 			))}
 
-		</div>
+		</ResumoCardsContainer>
 	)
 }

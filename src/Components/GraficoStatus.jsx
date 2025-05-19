@@ -1,5 +1,24 @@
-import styles from "./GraficoStatus.module.css";
+import styled from "styled-components"
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
+
+
+const GraficoStatusContainer = styled.section`
+  	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 40px;
+	width: 100%;
+	height: 300px;
+`;
+
+const Titulo = styled.h2`
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	text-align: center;
+	color:#2C3E50 ;
+`
 
 const data = [
 
@@ -12,8 +31,9 @@ export default function GraficoStatus() {
 	const COLORS = ["#2ecc71", "#e74c3c"]
 
 	return (
-		<div className={styles.GraficoStatus}>
-			<h2>{title}</h2>
+		<GraficoStatusContainer>
+			
+			<Titulo>{title}</Titulo>
 			<ResponsiveContainer>
 				<PieChart>
 
@@ -36,6 +56,6 @@ export default function GraficoStatus() {
 				</PieChart>
 			</ResponsiveContainer>
 
-		</div>
+		</GraficoStatusContainer>
 	)
 }

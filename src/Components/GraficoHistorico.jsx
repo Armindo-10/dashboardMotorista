@@ -1,5 +1,10 @@
-import styles from "./GraficoHistorico.module.css";
+import styled from "styled-components";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
+
+const GraficoHistoricoContainer = styled.section`
+     	background-color: #ffffff;
+	     padding: 20px;
+`
 
 const data = [
 
@@ -15,7 +20,7 @@ const data = [
 export default function GraficoHistorico() {
 	const title = "Histórico de entregas(Últimos Meses)"
 	return (
-		<div className={styles.GraficoHistorico}>
+		<GraficoHistoricoContainer>
 			<h2>{title}</h2>
 			<ResponsiveContainer width="100%" height={300}>
 
@@ -31,6 +36,6 @@ export default function GraficoHistorico() {
 			</ResponsiveContainer>
 
 
-		</div>
+		</GraficoHistoricoContainer>
 	)
 }

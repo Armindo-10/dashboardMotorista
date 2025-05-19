@@ -1,20 +1,54 @@
-import styles from "./StateCard.module.css"
+import styled from "styled-components";
+
+
+const StateCardContainer = styled.section`
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	width: 180px;
+	text-align: center;
+	margin-top: 40px;
+`;
+
+const StatValue = styled.div`
+    font-size: 24px;
+	font-weight: bold;
+	color: #2f39e2;
+`;
+
+const StateInfo = styled.div`
+  	margin: 0;
+	font-size: 14px;
+	color: #666;
+`;
+
+const Percentagem = styled.span`
+   color: ${props => (props.ispositive ? "limegreen" : "red")};
+   font-size : 1.1rem ;
+   font-weight: bold ;
+`
 
 function StateCard({ title, value, percentage, ispositive }) {
 	return (
 
-		<div className={styles.StateCard}>
-			<div className={styles.statValue}>{value}</div>
+		<StateCardContainer>
 
-			<div className={styles.stateInfo}>
-				<span className={ispositive ? "positive" : "negative"}>
+			<StatValue>{value}</StatValue>
+
+			<StateInfo>
+				<Percentagem className={ispositive ? "positive" : "negative"}>
 
 					{ispositive ? "+" : "-"} {percentage}%
-				</span>
+				</Percentagem>
 				<p>{title}</p>
-			</div>
+			</StateInfo>
 
-		</div>
+		</StateCardContainer>
 	)
 }
 
