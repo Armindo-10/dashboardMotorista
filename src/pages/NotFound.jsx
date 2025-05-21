@@ -1,6 +1,5 @@
-import styles from "./NotFound.module.css";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend, ResponsiveContainer } from "recharts";
-import styled from "styled-components"
+import styled from "styled-components";
 
 const NotFoundContainer = styled.div`
     width: 100%;
@@ -36,7 +35,7 @@ export default function NotFound() {
 			<Subtitulo>404</Subtitulo>
 			<Titulo>Page Not Found</Titulo>
 
-			<div className={styles.GraficoExemple}>
+			<div>
 
 				<ResponsiveContainer width="100%" height={300}>
 					<BarChart data={data}>

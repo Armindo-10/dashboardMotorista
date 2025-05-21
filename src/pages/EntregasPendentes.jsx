@@ -11,7 +11,6 @@ const Title = styled.h1`
 const Entregas = styled.div`
   padding: 20px;
   color: #fff;
-  background-color: #1e1e1e;
 `;
 
 export default function EntregasPendentes() {
