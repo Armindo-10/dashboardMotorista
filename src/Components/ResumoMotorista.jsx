@@ -11,7 +11,7 @@ const ResumoMotoristaContainer = styled.section`
 `;
 
 const ResumoCards = styled.div`
-   background-color: #f4f4f4;
+  background-color: #f4f4f4;
   padding: 20px;
   flex: 1;
   border-radius: 8px;
@@ -44,13 +44,13 @@ export default function ResumoMotorista() {
 
 			<ResumoCards>
 				<Titulo>Entregas Concluidas</Titulo>
-				<MdDoneAll size={45} color="orange"  className=" icones" />
+				<MdDoneAll size={45} color="orange" className=" icones" />
 				<p>24</p>
 			</ResumoCards>
 
 			<ResumoCards>
 				<Titulo>Km percorridos(Mês)</Titulo>
-				<FaRoad size={45} color="blue"  className=" icones"  />
+				<FaRoad size={45} color="blue" className=" icones" />
 				<p>1.250km</p>
 			</ResumoCards>
 
