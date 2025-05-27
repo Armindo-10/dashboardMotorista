@@ -1,6 +1,7 @@
 import StateCard from "../Components/StateCard";
 import { styled } from "styled-components"
 import ResumoCards from "../Components/ResumoCards";
+import Driver from "../imagens/carro-tecnologico.jpg"
 
 const Titulo = styled.h2`
 	color: white;
@@ -23,6 +24,13 @@ const DashboardContainer = styled.div`
 	font-weight: 800;
 	padding: 20px;
 	`
+const Self = styled.img`
+	width: 100%;
+	height: 350px;
+	margin-top: 60px;
+	object-fit: cover;
+	border-radius: 10px;
+	`
 
 export default function Dashboard() {
 
@@ -40,6 +48,8 @@ export default function Dashboard() {
 				<StateCard title="canceladas" value="2" percentage="4" ispositive={false} />
 				<StateCard title="total de km rodados" value="327km" percentage="1" ispositive={true} />
 			</CardContainer>
+
+			<Self src={Driver} alt="imagem-driver" />
 
 		</DashboardContainer>
 	)

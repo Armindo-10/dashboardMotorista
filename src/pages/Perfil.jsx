@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import FirsDrive from "../imagens/PrimeiroMotorista.jpg";
 import EditarPerfilModal from "../Components/EditarPerfilModal";
+import CriarMotoristaModal from "../Components/CriarMotoristaModal";
 import { useState } from "react";
 
 
@@ -79,6 +80,7 @@ const Pragrafo = styled.p`
 const Strong = styled.strong`
      font-weight: 800;
 	 color: yellow;
+	
 `
 
 const Foto = styled.img`
@@ -93,6 +95,7 @@ const Inside = styled.div`
 	align-items: center;
     justify-content: space-around;
     margin-top: 5%;
+
 `
 
 
@@ -107,9 +110,14 @@ export default function Perfil() {
 
 
 	const [modalAberto, setModalAberto] = useState(false);
+	const [motoristaEditando, setMotoristaEditando] = useState([]);
 
 	function salvarEdicao(dadosAtualizados) {
 		setDados(dadosAtualizados)
+	}
+
+	function adicionarMotorista(novo) {
+		setMotoristaEditando([...motoristaEditando, novo])
 	}
 
 
@@ -149,6 +157,28 @@ export default function Perfil() {
 				}
 			</Inside>
 
-		</ChartCardContainer>
+			<button onClick={() => {
+				setMotoristaEditando(null);
+				setModalAberto(true);
+			}}>
+				Adicionar Motorista
+			</button>
+
+			{
+				modalAberto && (
+					<CriarMotoristaModal
+						onClose={() => setModalAberto(false)}
+						onsave={adicionarMotorista}
+					/>
+				)
+			}
+			<ul>
+				{motoristaEditando.map((m, i) => (
+					<li key={i}>
+						{m.nome} -{m.veiculo} -{m.telefone}
+					</li>
+				))}
+			</ul>
+		</ChartCardContainer >
 	)
 }

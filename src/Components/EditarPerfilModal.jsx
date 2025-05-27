@@ -25,6 +25,12 @@ const BotoesAll = styled.div`
       margin-top: 1rem;
 	`;
 
+const Titulo = styled.h3`
+	color: black;
+	font-size: 1.rem;
+	text-transform: uppercase;
+	`
+
 const BotaoFirst = styled.button`
   padding: 10px 16px;
   font-size: 1rem;
@@ -78,7 +84,7 @@ export default function EditarPerfilModal({ dados, onclose, onsave }) {
 		<div>
 
 			<Modal>
-				<h3>Editar perfil</h3>
+				<Titulo>Editar perfil</Titulo>
 
 				<form onSubmit={hansleSubmit}>
 					<ModalInput type="text" name="nome" value={form.nome} onChange={handleChange} placeholder="Nome" />
