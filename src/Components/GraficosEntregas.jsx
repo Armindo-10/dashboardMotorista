@@ -22,7 +22,7 @@ const data = [
 	{ mes: "Marc", Entregas: 10 },
 	{ mes: "Apr", Entregas: 24 },
 	{ mes: "May", Entregas: 16 },
-	{ mes: "Jun", Entregas: 30 }
+	{ mes: "Jun", Entregas: 30 },
 
 ];
 

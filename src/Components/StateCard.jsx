@@ -2,17 +2,19 @@ import styled from "styled-components";
 
 
 const StateCardContainer = styled.section`
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	background-color: white;
-	border-radius: 8px;
-	padding: 20px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-	width: 180px;
-	text-align: center;
-	margin-top: 40px;
+     display: flex;
+     flex: 1;
+	 flex-wrap: wrap;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: space-between;
+	 background-color: white;
+	 border-radius: 8px;
+	 padding: 20px;
+	 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	 width: 180px;
+	 text-align: center;
+     margin-top: 40px;
 `;
 
 const StatValue = styled.div`
@@ -22,6 +24,9 @@ const StatValue = styled.div`
 `;
 
 const StateInfo = styled.div`
+    display: flex;
+	flex-direction: column;
+	text-align: center;
   	margin: 0;
 	font-size: 14px;
 	color: #666;
