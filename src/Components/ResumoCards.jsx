@@ -3,11 +3,18 @@ import styled from "styled-components";
 
 const ResumoCardsContainer = styled.section`
    	display: flex;
+	flex-wrap: wrap;
 	gap: 20px;
-	margin: 20px;
 	align-items: center;
 	justify-content: space-around;
 	text-align: center;
+	width: 100%;
+
+	@media (max-width: 768px) {
+	flex-direction: column;
+	align-items: stretch;
+	margin: 10px;
+	}
 `;
 
 const Card = styled.div`
@@ -20,6 +27,10 @@ const Card = styled.div`
 	margin-top: 40px;
 	border: 1px dashed yellow;
 	color: #fff;
+
+		@media (max-width: 768px) {
+		margin-top: 20px;
+	}
 `;
 
 const Titulo = styled.h3`
@@ -27,9 +38,10 @@ const Titulo = styled.h3`
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
-`
+`;
 
 export default function ResumoCards() {
+
 	const Cards = [
 		{ titulo: "Entregas concluidas", valor: 48, cor: "#2ecc71 " },
 		{ titulo: "Entregas pendentes", valor: 5, cor: " #e74c3c" },

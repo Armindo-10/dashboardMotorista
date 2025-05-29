@@ -1,14 +1,23 @@
 import styled from "styled-components";
 
 const TopbarContainer = styled.section`
-   	display: flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f4f6fa;
 	padding: 10px 20px;
-	height: 60px;
+	height: auto;
 	border-bottom: 1px solid #ddd;
 	border-radius: 5px;
+	flex-wrap: wrap;
+
+	@media (max-width: 620px) {
+		flex-direction: column-reverse;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+	
+	}
 `;
 
 const Titulo = styled.h1`
@@ -19,11 +28,18 @@ const Titulo = styled.h1`
 
 const Span = styled.span`
   font-weight: 800;
+  color: black;
 `
 const TobarRight = styled.div`
    	display: flex;
 	align-items: center;
 	gap: 10px;
+
+		@media (max-width: 620px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 `;
 
 const Foto = styled.img`

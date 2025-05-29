@@ -3,15 +3,23 @@ import styled from "styled-components";
 
 
 const SlidbarContainer = styled.header`
-   	width: 220px;
+	width: 220px;
 	height: 100vh;
-	background-color:rgba(0, 0, 0, 0.974);
+	background-color: #000;
 	color: white;
 	padding: 20px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 3;
+
+	@media (max-width: 768px) {
+	    width: 120px;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 `;
 
 const LinkLogo = styled(Link)`

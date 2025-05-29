@@ -7,10 +7,12 @@
   font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
+
 }
 
 .app-layout {
   display: flex;
+  
 }
 
 .main-content {
@@ -19,17 +21,14 @@
   flex-direction: column;
   margin-left: 240px;
   padding: 20px;
+  margin-left: 220px;
 }
 
 body {
-  
   min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2b5876, #4e4376);
+  background: linear-gradient(135deg,rgb(30, 65, 89),rgb(43, 37, 62));
   color: white;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-
-
 }

@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import FirsDrive from "../imagens/PrimeiroMotorista.jpg";
 import EditarPerfilModal from "../Components/EditarPerfilModal";
 import CriarMotoristaModal from "../Components/CriarMotoristaModal";
@@ -23,7 +23,6 @@ const Cards = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	
-	
 `;
 
 const Info = styled.div`
@@ -38,10 +37,11 @@ const Info = styled.div`
 	box-shadow: 0 2px 7px solid black;
 	width: 400px;
 	height: 100%;
+	cursor: pointer;
 
 	&:hover{
 		border: 1px solid white;
-		transition: 0.5s ease-in-out;
+		transition: 0.8s ease-in-out;
 	}
 `;
 
@@ -56,7 +56,6 @@ const Botao = styled.button`
 	letter-spacing: 1px;
 	text-transform: capitalize;
      cursor: pointer;
-
 
 	&:hover {
 		color: yellow;
@@ -157,28 +156,7 @@ export default function Perfil() {
 				}
 			</Inside>
 
-			<button onClick={() => {
-				setMotoristaEditando(null);
-				setModalAberto(true);
-			}}>
-				Adicionar Motorista
-			</button>
-
-			{
-				modalAberto && (
-					<CriarMotoristaModal
-						onClose={() => setModalAberto(false)}
-						onsave={adicionarMotorista}
-					/>
-				)
-			}
-			<ul>
-				{motoristaEditando.map((m, i) => (
-					<li key={i}>
-						{m.nome} -{m.veiculo} -{m.telefone}
-					</li>
-				))}
-			</ul>
+		
 		</ChartCardContainer >
 	)
 }

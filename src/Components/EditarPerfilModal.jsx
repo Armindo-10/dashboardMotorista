@@ -93,7 +93,6 @@ export default function EditarPerfilModal({ dados, onclose, onsave }) {
 					<ModalInput type="text" name="veiculo" value={form.veiculo} onChange={handleChange} placeholder="veiculo" />
 					<ModalInput type="text" name="entregasConcluidas" value={form.entregasConcluidas} onChange={handleChange} placeholder="entregasConcluidas" />
 
-					<BotoesAll>
 						<BotaoFirst onClick={() => onsave(form)}>Salvar</BotaoFirst>
 						<BotaoSecond type="button" onClick={onclose}>Cancelar</BotaoSecond>
 					</BotoesAll>

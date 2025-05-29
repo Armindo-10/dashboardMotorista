@@ -1,7 +1,7 @@
 import StateCard from "../Components/StateCard";
 import { styled } from "styled-components"
 import ResumoCards from "../Components/ResumoCards";
-import Driver from "../imagens/carro-tecnologico.jpg"
+import Driver from "../imagens/carro-tecnologico.jpg";
 
 const Titulo = styled.h2`
 	color: white;
@@ -15,7 +15,7 @@ const CardContainer = styled.div`
 	margin-top: 20px;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	`
+	`;
 
 const DashboardContainer = styled.div`
 	font-size: 1.4rem;
@@ -23,14 +23,14 @@ const DashboardContainer = styled.div`
 	letter-spacing: 1px;
 	font-weight: 800;
 	padding: 20px;
-	`
+	`;
 const Self = styled.img`
 	width: 100%;
 	height: 350px;
 	margin-top: 60px;
 	object-fit: cover;
 	border-radius: 10px;
-	`
+	`;
 
 export default function Dashboard() {
 
