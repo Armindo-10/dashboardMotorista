@@ -49,7 +49,7 @@ export default function Dashboard() {
 				<StateCard title="total de km rodados" value="327km" percentage="1" ispositive={true} />
 			</CardContainer>
 
-			<Self src={Driver} alt="imagem-driver" />
+			<Self src={Driver} alt="imagemDriver" />
 
 		</DashboardContainer>
 	)

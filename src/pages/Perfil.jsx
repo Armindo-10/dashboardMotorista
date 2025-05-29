@@ -109,15 +109,11 @@ export default function Perfil() {
 
 
 	const [modalAberto, setModalAberto] = useState(false);
-	const [motoristaEditando, setMotoristaEditando] = useState([]);
 
 	function salvarEdicao(dadosAtualizados) {
 		setDados(dadosAtualizados)
 	}
 
-	function adicionarMotorista(novo) {
-		setMotoristaEditando([...motoristaEditando, novo])
-	}
 
 
 	return (

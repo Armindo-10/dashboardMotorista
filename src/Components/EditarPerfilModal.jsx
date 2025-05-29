@@ -62,7 +62,7 @@ const BotaoSecond = styled.button`
   background-color: orange;
   color: black;
   }
-`
+`;
 
 export default function EditarPerfilModal({ dados, onclose, onsave }) {
 
@@ -86,7 +86,7 @@ export default function EditarPerfilModal({ dados, onclose, onsave }) {
 			<Modal>
 				<Titulo>Editar perfil</Titulo>
 
-				<form onSubmit={hansleSubmit}>
+				<BotoesAll onSubmit={hansleSubmit}>
 					<ModalInput type="text" name="nome" value={form.nome} onChange={handleChange} placeholder="Nome" />
 					<ModalInput type="text" name="email" value={form.email} onChange={handleChange} placeholder="Email" />
 					<ModalInput type="number" name="Telefone" value={form.telefone} onChange={handleChange} placeholder="+244 934-453-234" />
@@ -96,7 +96,7 @@ export default function EditarPerfilModal({ dados, onclose, onsave }) {
 						<BotaoFirst onClick={() => onsave(form)}>Salvar</BotaoFirst>
 						<BotaoSecond type="button" onClick={onclose}>Cancelar</BotaoSecond>
 					</BotoesAll>
-				</form>
+			
 			</Modal>
 
 		</div>

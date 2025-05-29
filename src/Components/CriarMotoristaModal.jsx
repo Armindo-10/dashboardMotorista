@@ -26,7 +26,7 @@ export default function CriarMotoristaModal({ onclose, onsave }) {
 		<section>
 			<form onSubmit={handleSubmit}>
 				<h2>Novo Motorista</h2>
-
+		        
 				<input type="text" name="nome" value={motorista.name} onChange={handleChange} />
 				<input type="email" name="email" value={motorista.email} onChange={handleChange} />
 				<input type="number" name="telefone" value={motorista.telefone} onChange={handleChange} />
@@ -37,7 +37,7 @@ export default function CriarMotoristaModal({ onclose, onsave }) {
 					<button onClick={() => onsave(motorista)}>salvar</button>
 					<button onClick={onclose}>cancelar</button>
 				</div>
-			</form>
+				</form>
 		</section>
 	)
 }
