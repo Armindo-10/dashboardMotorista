@@ -21,7 +21,7 @@ function App() {
         <Topbar />
 
         <Routes>
-          <Route path="" element={< NotFound />} />
+          <Route path="/" element={< NotFound />} />
           <Route path="/Dashboard" element={< Dashboard />} />
           <Route path="/EntregasPendentes" element={< EntregasPendentes />} />
           <Route path="/Status" element={< Status />} />

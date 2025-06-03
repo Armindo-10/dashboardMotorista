@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { CiLogout } from "react-icons/ci";
+import "../App.css"
 
 
 const SlidbarContainer = styled.header`
@@ -19,6 +21,7 @@ const SlidbarContainer = styled.header`
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		display: none;
 	}
 `;
 
@@ -59,8 +62,10 @@ const Links = styled(Link)`
 
 function Slidbar() {
 
+
 	return (
 		<SlidbarContainer>
+			<CiLogout size={25} className="icon-button"  />
 			<LinkLogo to="/Dashboard" >AGroway Motorista</LinkLogo>
 			<nav>
 				<ul>
@@ -69,7 +74,9 @@ function Slidbar() {
 					<Lista><Links to="/Status">Status</Links></Lista>
 					<Lista><Links to="/perfil">Perfil</Links></Lista>
 					<Lista><Links to="/Historico">Histórico de Entregas</Links></Lista>
+
 				</ul>
+
 			</nav>
 
 		</SlidbarContainer>

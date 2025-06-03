@@ -5,9 +5,10 @@ import styled from "styled-components";
 
 const Modal = styled.div`
 	background: white;
-	padding: 2rem;
+	padding: 1.2rem;
 	border-radius: 12px;
-	width: 400px;
+	width: 350px;
+	height: 100%;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 	`;
 
@@ -20,7 +21,6 @@ const ModalInput = styled.input`
 	`;
 
 const BotoesAll = styled.div`
-	 display:flex;
 	 justify-content: space-between;
       margin-top: 1rem;
 	`;
@@ -64,6 +64,12 @@ const BotaoSecond = styled.button`
   }
 `;
 
+const BotaoDiv = styled.div`
+    display: flex;
+	justify-content: space-between;
+	 align-items: center;
+`
+
 export default function EditarPerfilModal({ dados, onclose, onsave }) {
 
 	const [form, SetForm] = useState(dados);
@@ -92,11 +98,13 @@ export default function EditarPerfilModal({ dados, onclose, onsave }) {
 					<ModalInput type="number" name="Telefone" value={form.telefone} onChange={handleChange} placeholder="+244 934-453-234" />
 					<ModalInput type="text" name="veiculo" value={form.veiculo} onChange={handleChange} placeholder="veiculo" />
 					<ModalInput type="text" name="entregasConcluidas" value={form.entregasConcluidas} onChange={handleChange} placeholder="entregasConcluidas" />
-
+					<BotaoDiv>
 						<BotaoFirst onClick={() => onsave(form)}>Salvar</BotaoFirst>
 						<BotaoSecond type="button" onClick={onclose}>Cancelar</BotaoSecond>
-					</BotoesAll>
-			
+					</BotaoDiv>
+
+				</BotoesAll>
+
 			</Modal>
 
 		</div>

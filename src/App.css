@@ -12,23 +12,37 @@
 
 .app-layout {
   display: flex;
-  
+
 }
 
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 240px;
   padding: 20px;
   margin-left: 220px;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg,rgb(30, 65, 89),rgb(43, 37, 62));
+  background: linear-gradient(135deg, rgb(30, 65, 89), rgb(43, 37, 62));
   color: white;
-  display: flex;
-  flex-direction: column;
   overflow-x: hidden;
+}
+
+.icon-button {
+  font-size: 30px;
+  display: none;
+}
+
+/*responsividade*/
+@media(max-width:768px) {
+  .main-content {
+    margin: 0;
+  }
+
+  .icon-button {
+    display: block;
+    z-index: 99999;
+  }
 }

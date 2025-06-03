@@ -28,27 +28,29 @@ const Cards = styled.div`
 const Info = styled.div`
     display: flex;
     flex-direction: column;
-	gap: 9px;
+	gap: 7px;
+	text-align: center;
 	align-items: center;
-	justify-content: space-between;
+	text-align: center;
 	background-color:  rgb(2, 2, 123);
-	padding: 25px;
+	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2px 7px solid black;
-	width: 400px;
+	width: 350px;
 	height: 100%;
 	cursor: pointer;
 
 	&:hover{
 		border: 1px solid white;
-		transition: 0.8s ease-in-out;
+		transition: 0.5s ease-in-out;
 	}
 `;
 
 const Botao = styled.button`
 	background-color: black;
 	color: white;
-	padding: 10px 20px;
+	width: 160px;
+	height: 52px;
 	border-radius: 7px;
 	margin-top: 7px;
 	text-align: center;
@@ -73,6 +75,7 @@ const Botoes = styled.div`
 const Pragrafo = styled.p`
     color: white;
 	font-weight: 700;
+	align-items: center;
 	
 `;
 
@@ -127,11 +130,11 @@ export default function Perfil() {
 
 					<Info>
 						<Foto src={FirsDrive} alt="fotoPrimeiroDrive" />
-						<Pragrafo><Strong>Nome:</Strong>{dados.nome}</Pragrafo>
-						<Pragrafo><Strong>Email:</Strong>{dados.email}</Pragrafo>
-						<Pragrafo><Strong>Telefone:</Strong>{dados.telefone}</Pragrafo>
-						<Pragrafo><Strong>Matrícula:</Strong>{dados.veiculo}</Pragrafo>
-						<Pragrafo><Strong>entregasConcluidas:</Strong>{dados.entregasConcluidas}</Pragrafo>
+						<Pragrafo><Strong>Nome:</Strong> {dados.nome}</Pragrafo>
+						<Pragrafo><Strong>Email:</Strong> {dados.email}</Pragrafo>
+						<Pragrafo><Strong>Telefone:</Strong> {dados.telefone}</Pragrafo>
+						<Pragrafo><Strong>Matrícula:</Strong> {dados.veiculo}</Pragrafo>
+						<Pragrafo><Strong>entregasConcluidas:</Strong> {dados.entregasConcluidas}</Pragrafo>
 
 						<Botoes>
 							<Botao onClick={() => setModalAberto(true)}>editar Perfil</Botao>
