@@ -30,6 +30,7 @@ const StateInfo = styled.div`
   	margin: 0;
 	font-size: 14px;
 	color: #666;
+
 `;
 
 const Percentagem = styled.span`
