@@ -39,6 +39,7 @@ body {
 @media(max-width:768px) {
   .main-content {
     margin: 0;
+
   }
 
   .icon-button {
